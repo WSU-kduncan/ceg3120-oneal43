@@ -17,7 +17,7 @@
   - 'git rm [file]'
 - commit
   - Record changes to the repository
-  - 'git commit'
+  - 'git commit -m "commit message here"'
 - push
   - Transmit local branch commits to the remote repository branch
   - 'git push [alias] [branch]'
