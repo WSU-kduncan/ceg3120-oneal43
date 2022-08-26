@@ -74,7 +74,6 @@
 - [How to Use a .gitignore File](https://www.pluralsight.com/guides/how-to-use-gitignore-file)
 - [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 - [Secure Shell](https://www.techtarget.com/searchsecurity/definition/Secure-Shell)
-- []()
                                                                                                                                                                                          75,6          Bot
 
 
