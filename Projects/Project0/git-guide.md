@@ -8,7 +8,7 @@
   - `git status`
 - clone
   - Retrieve an entire repository as a Git repository
-  - 'git clone'
+  - `git clone`
 - add
   - Add a file as it looks now to your next commit
   - 'git add'
