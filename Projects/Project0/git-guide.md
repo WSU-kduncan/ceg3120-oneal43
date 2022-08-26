@@ -11,10 +11,10 @@
   - `git clone`
 - add
   - Add a file as it looks now to your next commit
-  - `git add`
+  - `git add [filename]`
 - rm
   - Delete the file from a project and stage the removal for commit
-  - `git rm [file]`
+  - `git rm [filename]`
 - commit
   - Record changes to the repository
   - `git commit -m "commit message here"`
