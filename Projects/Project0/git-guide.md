@@ -11,31 +11,31 @@
   - `git clone`
 - add
   - Add a file as it looks now to your next commit
-  - 'git add'
+  - `git add`
 - rm
   - Delete the file from a project and stage the removal for commit
-  - 'git rm [file]'
+  - `git rm [file]`
 - commit
   - Record changes to the repository
-  - 'git commit -m "commit message here"'
+  - `git commit -m "commit message here"`
 - push
   - Transmit local branch commits to the remote repository branch
-  - 'git push [alias] [branch]'
+  - `git push [alias] [branch]`
 - fetch
   - Fetch down all the branches from the Git remote
-  - 'git fetch [alias]'
+  - `git fetch [alias]`
 - merge
   - Merge the specified branch's history into the current one
-  - 'git merge [alias]/[branch]'
+  - `git merge [alias]/[branch]`
 - pull
   - Fetch and merge any commits from the tracking remote branch
-  - 'git pull'
+  - `git pull`
 - branch
   - Create a new branch at the current commit
-  - 'git branch [branch-name]'
+  - `git branch [branch-name]`
 - checkout
   - Switch to another branch and check it our into your working directory
-  - 'git checkout'
+  - `git checkout`
 - ~~init~~
 - ~~remote~~
 
@@ -43,7 +43,7 @@
 
 - .git folder
   - Contains all information that is necessary for the project and all information relating to commits, remote repository address, etc.
-  - 'ls -a'
+  - `ls -a`
 - .gitignore file
   - Let git know that it should ignore certain files and not track them
   - Files that should be ignored:
@@ -53,17 +53,17 @@
     - dist folders
     - Dependancies which can be downloaded from a package manager
     - .md files that are irrelevant (todo.md)
-  - '.gitignore [filename]'
+  - `.gitignore [filename]`
 - ~~.git/hooks~~
 
 ## GitHub
 
 - Pull requests
   - Let you tell others about changes you've pushed to a branch in a repository on GitHub. 
-  - 'git pull'
+  - `git pull`
 - SSH authentication to repositories
   - Network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network
-  - 'ssh UserName@SSHserver.exampl.com'
+  - `ssh UserName@SSHserver.exampl.com`
 - ~~Actions~~
 
 ## Resources
