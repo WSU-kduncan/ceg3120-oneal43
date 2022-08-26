@@ -63,7 +63,7 @@
   - `git pull`
 - SSH authentication to repositories
   - Network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network
-  - `ssh UserName@SSHserver.exampl.com`
+  - `ssh UserName@SSHserver.example.com`
 - ~~Actions~~
 
 ## Resources
