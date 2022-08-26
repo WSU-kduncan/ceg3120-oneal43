@@ -52,7 +52,7 @@
     - .DS_Store on macOS
     - dist folders
     - Dependancies which can be downloaded from a package manager
-    - .md files that are irrelevant (todo.md)
+    - .md files that are irrelevant (MyToDoList.md)
   - `.gitignore [filename]`
 - ~~.git/hooks~~
 
