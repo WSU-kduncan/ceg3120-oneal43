@@ -35,7 +35,7 @@
   - `git branch [branch-name]`
 - checkout
   - Switch to another branch and check it our into your working directory
-  - `git checkout`
+  - `git checkout [branch name]`
 - ~~init~~
 - ~~remote~~
 
@@ -45,7 +45,7 @@
   - Contains all information that is necessary for the project and all information relating to commits, remote repository address, etc.
   - `ls -a`
 - .gitignore file
-  - Let git know that it should ignore certain files and not track them
+  - Lets git know that it should ignore certain files and not track them
   - Files that should be ignored:
     - Log files
     - Files with API keys/secrets, credentials, or sensitive information
@@ -74,6 +74,3 @@
 - [How to Use a .gitignore File](https://www.pluralsight.com/guides/how-to-use-gitignore-file)
 - [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 - [Secure Shell](https://www.techtarget.com/searchsecurity/definition/Secure-Shell)
-                                                                                                                                                                                         75,6          Bot
-
-
