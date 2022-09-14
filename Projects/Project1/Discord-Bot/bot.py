@@ -31,15 +31,15 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    LoTR_quotes = [
-        'But in the end it’s only a passing thing, this shadow; even darkness must pass.',
-        'It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.',
-        'A wizard is never late, Frodo Baggins. Nor is he early. He arrives precisely when he means to.',
+    smeagol_quotes = [
+        'My precious.',
+        'Curse the Baggins! It’s gone! What has it got in its pocketses? Oh we guess, we guess, my precious. He’s found it, yes he must have.',
+        'Smeagol will swear on the Precious.',
         'It came to me. It’s mine, my own, my love, my precious.',
     ]
     if message.content == 'ring!':
     #if message.content.startswith('$ring'):
-        response = random.choice(LoTR_quotes)
+        response = random.choice(smeagol_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
