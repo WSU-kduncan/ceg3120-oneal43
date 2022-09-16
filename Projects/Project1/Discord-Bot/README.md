@@ -14,7 +14,7 @@
 	- ring!
       - what response this will provide (from your bot)
 	- My bot will respond with Smeagol quotes
-    - ![Smeagol Quotes](./Images/Smeagol.png)
+    - ![Smeagol Quotes](Smeagol.png)
   - Research
     - you may have realized that it is lame that the bot only runs when you run the program - it turns off if you disconnect or need to switch tasks.
     - In the real world, things are "always on", not waiting for Bob to turn his PC on and make sure the program is running.
