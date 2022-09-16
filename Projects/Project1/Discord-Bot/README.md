@@ -19,3 +19,4 @@
     - you may have realized that it is lame that the bot only runs when you run the program - it turns off if you disconnect or need to switch tasks.
     - In the real world, things are "always on", not waiting for Bob to turn his PC on and make sure the program is running.
     - **Research** some possible solutions that would solve this, and discuss why you think it would work.
+	- To solve the issue of not having the bot run 24/7, one could opt to leave their pc running 24/7 without exiting the script. Othr options that are more proper would be running it on a dedicate server or hosting it on a VPS. 
