@@ -1,6 +1,6 @@
-Name: Michael O'Neal
-Email: oneal.43@wright.edu
-Project 2
+- Name: Michael O'Neal
+- Email: oneal.43@wright.edu
+- Project 2
 
 ## Part 1
 
