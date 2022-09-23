@@ -11,7 +11,7 @@
 3. Internet gateway created & configured & role described
    ![gateway](Images/ONeal-gw.png)
 4. Route table created and configured & role described
-   
+   ![routetable](Images/ONeal-routetable.png)
 5. Security group created and configured & role described
    
 
