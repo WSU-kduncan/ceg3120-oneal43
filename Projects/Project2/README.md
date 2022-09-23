@@ -5,7 +5,7 @@
 ## Part 1
 
 1. VPC created & configured & role described
-  - ![vpc](images/ONeal-vpc)
+  - ![vpc](Images/ONeal-vpc)
 2. Subnet created & configured & role described
 3. Internet gateway created & configured & role described
 4. Route table created and configured & role described
