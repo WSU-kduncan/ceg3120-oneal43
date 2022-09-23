@@ -9,7 +9,7 @@
 2. Subnet created & configured & role described
    ![subnet](Images/ONeal-Subnet.png)
 3. Internet gateway created & configured & role described
-   ![internet gateway](Images/ONeal-gw.png)
+   ![gateway](Images/ONeal-gw.png)
 4. Route table created and configured & role described
    
 5. Security group created and configured & role described
