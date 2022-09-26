@@ -12,7 +12,9 @@
    ![gateway](Images/ONeal-gw.png)
 4. Route table created and configured & role described
    ![routetable](Images/ONeal-routetable.png)
+   ![routetable rule](Images/ONeal-routes.png)
 5. Security group created and configured & role described
+   ![Security Groups](Images/ONeal-SG.png)
    
 
 ## Part 2
