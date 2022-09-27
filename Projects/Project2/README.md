@@ -6,6 +6,7 @@
 
 1. VPC created & configured & role described
    ![vpc](Images/ONeal-VPC.png)
+  - VPC known as Virtual Private Cloud enables users to launch AWSresources into a virtual network that resembles a traditional network.
 2. Subnet created & configured & role described
    ![subnet](Images/ONeal-Subnet.png)
 3. Internet gateway created & configured & role described
