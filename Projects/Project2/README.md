@@ -6,17 +6,20 @@
 
 1. VPC created & configured & role described
    ![vpc](Images/ONeal-VPC.png)
-  - VPC known as Virtual Private Cloud enables users to launch AWSresources into a virtual network that resembles a traditional network.
+  - VPC known as Virtual Private Cloud enables users to launch AWS resources into a virtual network that resembles a traditional network.
 2. Subnet created & configured & role described
    ![subnet](Images/ONeal-Subnet.png)
+  - A subnet is a range of IP adresses in the VPC that you can launch AWS resources into. This includes both public and private subnets that can be used for a variety of reasons. 
 3. Internet gateway created & configured & role described
    ![gateway](Images/ONeal-gw.png)
+  - An internet gateway enables resources in your public subnets (such as EC2 instances) to connect to the internet if the resource has a public IPv4 address or an IPv6 address. 
 4. Route table created and configured & role described
    ![routetable](Images/ONeal-routetable.png)
    ![routetable rule](Images/routes.png)
+  - A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.
 5. Security group created and configured & role described
    ![Security Groups](Images/SGs.png)
-   
+   - A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
 
 ## Part 2
 
