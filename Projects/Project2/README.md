@@ -25,7 +25,7 @@
 
 1. Instance details
    - AMI selected
-	* Ubuntu
+	``` Ubuntu```
      - default username of the instance type selected
 	* ami-08c40ec9ead489470
    - Instance type selected
