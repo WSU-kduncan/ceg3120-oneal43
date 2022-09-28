@@ -25,11 +25,11 @@
 
 1. Instance details
    - AMI selected
-	``` Ubuntu```
-     - default username of the instance type selected
-	* ami-08c40ec9ead489470
+	```Ubuntu```
+   - default username of the instance type selected
+	```ami-08c40ec9ead489470```
    - Instance type selected
-	* t2.micro
+	```t2.micro```
 2. How to attach instance to VPC
   - To attach the instance to a VPC, 
 3. Public IP address auto-assign - yay or nay and why?
