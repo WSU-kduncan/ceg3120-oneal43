@@ -31,9 +31,9 @@
    - Instance type selected
 	```t2.micro```
 2. How to attach instance to VPC
-  - To attach the instance to a VPC, 
+  - The instance is connected to the VPC via the subnet. To do this, ensure that when creating the subnet, you are assigning valid CIDR blocks that correspond with the range associated with the VPC. 
 3. Public IP address auto-assign - yay or nay and why?
-  -
+  - Nay. I do not want me instance to be publicly available and I have also assigned an EIP address to the instance therefore, I do not need to auto-assign a public IP address.
 4. How to create and attach storage volume to instance
   - Under configure storage, there are two different methods to adding storage volumes to your instance. I opted to use simple but there is the option to use advanced where you can dictate size, volume type, add encryption, and choose if the volume is deleted when the instance is terminated. 
 5. How to tag instance with "Name" of "YOURLASTNAME-instance"
