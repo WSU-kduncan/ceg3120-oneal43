@@ -21,7 +21,7 @@
    ![Security Groups](Images/SGs.png)
    - A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
 
-## Part 2
+## Part 2`
 
 1. Instance details
    - AMI selected
@@ -41,10 +41,26 @@
 6. How to associate VPC security group (your security group) with your instance
   - To associate VPC security groups with my instance, under "Firewall (security groups)" in the instance, check "Select existing security group". You can then see all security groups for the instance under "Common security groups". Select the security group for the VPC that was created in an earlier step.
 7. How to create / reserve and associate and Elastic IP address with your instance
-  -
+  - Navigate to Elastic IPs
+  - Click Allocate Elastic IP address
+  - Ensure us-east-1 is selected
+  - Ensure Amazon's pool of IPv4 addresses is selected
+  - Add a new tag with the key "Name" and Value "ONeal-EIP"
+  - Click allocate
+  - Select ONeal-EIP
+  - Click on Actions
+  - Click Associate Elastic IP address
+  - Choose INstance for Resource type
+  - Choose the instance created for this project ONeal-Instance
+  - Select IP address that is populated when you click on the text box for Private IP Address.
+  - Click Associate
 8. Screenshot with instance details
    ![Instance details](Images/instance-details.png)
 9. How to change hostname via commands on instance
-  -
+  - sudo hostnamectl set-hostname ONeal-Ubuntu
+  - Created copy of /etc/hosts named /etc/hosts-old
+  - Edited /etc/hosts by replacing local host with ONeal-Ubuntu
+  - Disconnected ssh
+  - Reconnected via ssh to reflect changes
 10. Screenshot of successful SSH connection to instance (with your new hostname instead of ip-##-##-##-##)
    ![ssh connection](Images/ssh-connection.png)
