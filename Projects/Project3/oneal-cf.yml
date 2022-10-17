@@ -124,7 +124,7 @@ Resources:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: CEG3120 Project3
+          Value: ONeal-CF-instance
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
@@ -132,7 +132,7 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.25
+          PrivateIpAddress: 10.0.0.30
       UserData:
         Fn::Base64:
           !Sub |
@@ -141,6 +141,9 @@ Resources:
             apt-get install -y \
               git \
               htop \
+              python3.8 \
+              python3-pip \
               sl && \
+              hostnamectl set-hostname moneal && \
             echo "This is from the CF template" > /home/ubuntu/hello.txt && \
             reboot
