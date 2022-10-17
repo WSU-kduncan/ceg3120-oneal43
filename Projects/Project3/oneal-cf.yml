@@ -32,7 +32,7 @@ Resources:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: CEG3120 VPC
+          Value: ONeal-CF-VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
@@ -41,12 +41,16 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
+          Key: Name
+          Name: ONeal-CF-Subnet
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
     Properties:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
+          Key: Name
+          Name: ONeal-CF-Gateway
   AttachGateway:
     Type: 'AWS::EC2::VPCGatewayAttachment'
     Properties:
@@ -59,6 +63,8 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
+          Key: Name
+          Value: ONeal-CF-RouteTable
   Route:
     Type: 'AWS::EC2::Route'
     DependsOn: AttachGateway
@@ -82,6 +88,8 @@ Resources:
     Properties:
       VpcId: !Ref VPC
       GroupDescription: Enable SSH access via port 22 and open all insternal ports.
+      Key: Name
+      Value: ONeal-CF-SecurityGroups
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
@@ -116,7 +124,7 @@ Resources:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: CEG3120 Ubuntu
+          Value: CEG3120 Project3
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
