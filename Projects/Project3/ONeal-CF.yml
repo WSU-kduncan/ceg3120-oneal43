@@ -29,8 +29,6 @@ Resources:
     Properties:
       CidrBlock: 10.0.0.0/24
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
         - Key: Name
           Value: ONeal-CF-VPC
   Subnet:
@@ -39,18 +37,14 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/28
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
         - Key: Name
-          Name: ONeal-CF-Subnet
+          Value: ONeal-CF-Subnet
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
     Properties:
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
         - Key: Name
-          Name: ONeal-CF-Gateway
+          Value: ONeal-CF-Gateway
   AttachGateway:
     Type: 'AWS::EC2::VPCGatewayAttachment'
     Properties:
@@ -61,8 +55,6 @@ Resources:
     Properties:
       VpcId: !Ref VPC
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
         - Key: Name
           Value: ONeal-CF-RouteTable
   Route:
@@ -87,9 +79,10 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: ONeal-CF-SecurityGroups
       GroupDescription: Enable SSH access via port 22 and open all insternal ports.
-    - Key: Name
-      Value: ONeal-CF-SecurityGroups
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
@@ -99,6 +92,10 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: 130.108.0.0/16  # WSU CIDR
+        - IpProtocol: tcp
+          FromPort: '22'
+          ToPort: '22'
+          CidrIp: 74.131.0.0/32 # Home
         - IpProtocol: -1
           FromPort: '-1'
           ToPort: '-1'
@@ -121,8 +118,6 @@ Resources:
       InstanceType: t2.micro
       KeyName: !Ref KeyName
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
         - Key: Name
           Value: ONeal-CF-instance
       NetworkInterfaces:
@@ -132,7 +127,7 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.30
+          PrivateIpAddress: 10.0.0.10
       UserData:
         Fn::Base64:
           !Sub |
@@ -141,9 +136,9 @@ Resources:
             apt-get install -y \
               git \
               htop \
-              python3.8 \
-              python3-pip \
+              python3 \
+              pip \
               sl && \
-              hostnamectl set-hostname moneal && \
+            sudo hostnamectl set-hostname project3 && \
             echo "This is from the CF template" > /home/ubuntu/hello.txt && \
             reboot
