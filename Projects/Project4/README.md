@@ -20,7 +20,7 @@ To ssh between each instance utilizing their private IPs, I created config on ea
 ```
 how?
 ```
-     - What file(s) where modified & their location
+   - What file(s) where modified & their location
 ```
 /etc/haproxy/haproxy.cfg
 ```
