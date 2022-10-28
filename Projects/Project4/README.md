@@ -17,6 +17,9 @@ To ssh between each instance utilizing their private IPs, I created config on ea
 ```
 3. **_HAProxy configuration & documentation requirements_**
    - How to set up a HAProxy load balancer
+```
+how?
+```
      - What file(s) where modified & their location
 ```
 /etc/haproxy/haproxy.cfg
