@@ -18,7 +18,7 @@ To ssh between each instance utilizing their private IPs, I created config on ea
 3. **_HAProxy configuration & documentation requirements_**
    - How to set up a HAProxy load balancer
 ```
-how?
+Both frontend and backend were used in the configurations for haproxy. The frontend used the private ip for the proxy to listen on port 80 before pointing to the backend webservers. The backend webservers listened on port 80 on both webserv1 and webserv2's private ip addresses. 
 ```
    - What file(s) where modified & their location
 ```
@@ -38,7 +38,7 @@ how?
 *Added the below configurations for backend and frontend web servers
 
 * frontend web_servers
-  * bind 10.0.010:80
+  * bind 10.0.0.10:80
   * default_backend web_servers
 
 * backend web_servers
@@ -51,19 +51,29 @@ how?
      - How to restart the service after a configuration change
 ```
 systemctl restart haproxy.service
+systemctl reload haproxy
 ```
      - Resources used (websites)
 4. **_Webserver 1 & 2 configuration & documentation requirements_**
    - How set up a webserver
      - What file(s) were modified & their location
+```
+TO set up the webserver, index.html located at /var/www/html was modified to reflect onctent on both webservers.
+```
      - What configuration(s) were set (if any)
+```
+Nothing additional was configured for apache2.
+```
      - Where site content files were located (and why)
+```
+The site content files are located in /var/www/html. THis is the location for the original apache2 site content so it was replaced with the content for this project.
+```
      - How to restart the service after a configuration change
+```
+sudo service apache2 restart
+```   
      - Resources used (websites)
 5. From the browser, when connecting to the proxy server, take two screenshots.
    - one screenshot that shows content from "server 1"
    - one screenshot that shows content from "server 2"
 6. (Optional) - link to your proxy so I can click it.
-                                                                                                                                                                                         1,3           Top
-
-
