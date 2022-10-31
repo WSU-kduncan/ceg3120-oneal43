@@ -75,7 +75,7 @@ sudo service apache2 restart
      - Resources used (websites)
 5. From the browser, when connecting to the proxy server, take two screenshots.
    - one screenshot that shows content from "server 1"
-![webserv1](Images/webser1.png)
+![webserv1](webserv1.png)
    - one screenshot that shows content from "server 2"
-![webserv2](Images/webserv2.png)
+![webserv2](webserv2.png)
 6. (Optional) - link to your proxy so I can click it.
