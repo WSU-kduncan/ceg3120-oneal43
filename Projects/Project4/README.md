@@ -9,7 +9,7 @@ Project 4
 1. Create an `/etc/hosts` OR `.ssh/config` file on each system that correlates hostnames to private IPs of systems within the subnet (your instances).
    - Description of how file is configured
 ```
-I setup a config file for both webserv1 and webserv2. The config file as seen beleow contains the private ip addresses for each server, the user, and the path to the private key which allows an ssh connection.
+I setup a config file for webserv1, webserv2, and proxy. The config file contains the private ip addresses for each server, the user, and the path to the private key which allows an ssh connection. 
 ```
 2. Document how to SSH in between the systems utilizing their private IPs.
 ```
